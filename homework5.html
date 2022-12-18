@@ -1,0 +1,475 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+#article {height:1000px;background-color:#fffaf3;padding:1em;text-align:center}
+</style>
+</head>
+
+<body>
+<div id="article">
+<h1>~你是哪一種狗狗~</h1>
+<h2>提醒!請想好再做選擇，選擇後不要按其他選擇的按鈕，以免系統故障，謝謝配合</h2>
+<p>你是一隻狗狗，你的主人是一位獨居的社畜</p>
+<p>這天主人下班回家了</p>
+<p>這時候，你會選擇</p>
+<button onclick="display1();">撲向主人迎接他</button>
+<button onclick="display2();">一直汪汪叫搖尾巴</button>
+<button onclick="display3();">無視主人躲在角落</button>
+<button onclick="display4();">熱情衝上去咬主人的外套</button>
+
+<!--button1-->
+<p id="button1" style="display:none">
+你撲到主人身上<br>
+主人手上的晚餐被你打翻了一地<br>
+生氣的主人把你推開<br>
+這時候你會<br><br>
+<button onclick="display5();">被主人推開了只好去咬沙發</button>
+<button onclick="display6();">主人是在跟我玩吧，咬主人的腳</button>
+
+<!--button1-1-->
+<p id="button1-1" style="display:none">
+主人清理完被打翻的晚餐走到客廳看見被你咬到破爛的沙發<br>
+主人氣得拿起棍子要來打你<br>
+這時候你會<br><br>
+<button onclick="display13();">逃跑</button>
+<button onclick="display14();">裝可憐</button>
+
+<!--button1-1-1-->
+<p id="button1-1-1" style="display:none">
+你跑出家門<br>
+你成為一隻流浪的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button1-1-2-->
+<p id="button1-1-2" style="display:none">
+你對著主人裝可憐<br>
+主人不領情的把你打死<br>
+你成為一隻葛屁的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+
+<!--button1-2-->
+<p id="button1-2" style="display:none">
+主人的腳被你咬了一口<br>
+主人氣得把你趕出家門<br>
+這時候你會<br><br>
+<button onclick="display15();">在門口等主人開門</button>
+<button onclick="display16();">到附近散步</button>
+
+<!--button1-2-1-->
+<p id="button1-2-1" style="display:none">
+你趴在門口等了一整晚<br>
+你是一隻孤單的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button1-2-2-->
+<p id="button1-2-2" style="display:none">
+你到附近去散步<br>
+過馬路被車撞到<br>
+你變成一隻掰咖的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+</p>
+
+<!--button2-->
+<p id="button2" style="display:none">
+你跑到主人面前興奮的汪汪叫<br>
+疲憊的主人覺得很煩燥<br>
+叫你閉嘴後無視你走向客廳<br>
+這時候你會<br><br>
+<button onclick="display7();">汪汪叫跟在主人後面一起前往客廳</button>
+<button onclick="display8();">肚子餓了，跑去廚房</button>
+
+<!--button2-1-->
+<p id="button2-1" style="display:none">
+主人覺得你很吵把你關在門外<br>
+這時候你會<br><br>
+<button onclick="display17();">在門外叫主人開門</button>
+<button onclick="display18();">趴在門外等主人開門</button>
+
+<!--button2-1-1-->
+<p id="button2-1-1" style="display:none">
+你在門外不斷地叫<br>
+主人還是不理你<br>
+你變成一隻沙啞的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button2-1-2-->
+<p id="button2-1-2" style="display:none">
+你趴在門口等了一整晚<br>
+你是一隻孤單的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+
+<!--button2-2-->
+<p id="button2-2" style="display:none">
+你肚子餓了，跑去廚房希望主人餵你<br>
+主人無視你走向客廳<br>
+這時候你會<br><br>
+<button onclick="display19();">叼著碗去找主人</button>
+<button onclick="display20();">趴在廚房等主人</button>
+
+<!--button2-2-1-->
+<p id="button2-2-1" style="display:none">
+主人邊看手機邊幫你倒飼料<br>
+倒的比平常多非常多<br>
+你把它全部吃完了<br>
+你成為一隻撐死的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button2-2-2-->
+<p id="button2-2-2" style="display:none">
+主人沒有發現你餓了<br>
+你成為一隻餓死的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+</p>
+
+<!--button3-->
+<p id="button3" style="display:none">
+你躲起來想看看主人的反應<br>
+沒想到主人直接往客廳走去<br>
+似乎沒有發現你不見了<br>
+這時候你會<br><br>
+<button onclick="display9();">去客廳看主人在幹嘛</button>
+<button onclick="display10();">肚子餓了，去廚房找食物</button>
+
+<!--button3-1-->
+<p id="button3-1" style="display:none">
+你跟著主人來到客廳<br>
+主人看見你白天咬爛的沙發<br>
+氣得拿起棍子朝你衝過來<br>
+這時候你會<br><br>
+<button onclick="display21();">逃跑</button>
+<button onclick="display22();">裝可憐</button>
+
+<!--button3-1-1-->
+<p id="button3-1-1" style="display:none">
+你跑出家門<br>
+你成為一隻流浪的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button3-1-2-->
+<p id="button3-1-2" style="display:none">
+你對著主人裝可憐<br>
+主人不領情的把你打死<br>
+你成為一隻葛屁的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+
+<!--button3-2-->
+<p id="button3-2" style="display:none">
+你肚子餓了跑去廚房找食物<br>
+你發現裝飼料的袋子沒有封口<br>
+你會選擇<br><br>
+<button onclick="display23();">叼著碗去找主人</button>
+<button onclick="display24();">推倒飼料袋</button>
+
+<!--button3-2-1-->
+<p id="button3-2-1" style="display:none">
+主人邊看手機邊幫你倒飼料<br>
+倒的比平常多非常多<br>
+你把它全部吃完了<br>
+你成為一隻撐死的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button3-2-2-->
+<p id="button3-2-2" style="display:none">
+你把飼料推倒<br>
+看到滿地的食物你很開心地一直吃<br>
+你成為一隻撐死的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+</p>
+
+<!--button4-->
+<p id="button4" style="display:none">
+看到主人你很興奮地衝上去咬主人的外套<br>
+主人的羽絨外套被你咬破了<br>
+羽毛像雪花一樣炸出來了<br>
+這時候你會<br><br>
+<button onclick="display11();">主人好像生氣了，跑去躲起來</button>
+<button onclick="display12();">這一定是新玩具對吧，在主人面前玩起羽毛</button>
+
+<!--button4-1-->
+<p id="button4-1" style="display:none">
+你跑去躲在床底下<br>
+過了一陣子主人呼喚你<br>
+這時候你會<br><br>
+<button onclick="display25();">出去找主人</button>
+<button onclick="display26();">繼續躲在床底下</button>
+
+<!--button4-1-1-->
+<p id="button4-1-1" style="display:none">
+你離開床底下去找主人<br>
+主人還沒消氣<br>
+你被主人拿棍子打死<br>
+你成為一隻葛屁的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button4-1-2-->
+<p id="button4-1-2" style="display:none">
+主人看你不出來也就決定不理你<br>
+你是一隻孤單的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+
+<!--button4-2-->
+<p id="button4-2" style="display:none">
+你玩起了羽毛<br>
+主人氣得把你趕出家門<br>
+這時候你會<br><br>
+<button onclick="display27();">去馬路上亂逛</button>
+<button onclick="display28();">在門口等主人開門</button>
+
+<!--button4-2-1-->
+<p id="button4-2-1" style="display:none">
+你到馬路上亂逛<br>
+不小心被車撞到<br>
+你變成一隻掰咖的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+
+<!--button4-2-2-->
+<p id="button4-2-2" style="display:none">
+你趴在門口等了一整晚<br>
+你是一隻孤單的...<br>
+<a href="結果.html">查看結果</a>
+</p>
+</p>
+</p>
+
+</div>
+
+<script>
+function display1(){
+let a = document.getElementById("button1");
+let b = document.getElementById("button2");
+let c = document.getElementById("button3");
+let d = document.getElementById("button4");
+a.style.display ="block";
+b.style.display ="none";
+c.style.display ="none";
+d.style.display ="none";
+}
+
+function display2(){
+let a = document.getElementById("button1");
+let b = document.getElementById("button2");
+let c = document.getElementById("button3");
+let d = document.getElementById("button4");
+a.style.display ="none";
+b.style.display ="block";
+c.style.display ="none";
+d.style.display ="none";
+}
+
+function display3(){
+let a = document.getElementById("button1");
+let b = document.getElementById("button2");
+let c = document.getElementById("button3");
+let d = document.getElementById("button4");
+a.style.display ="none";
+b.style.display ="none";
+c.style.display ="block";
+d.style.display ="none";
+}
+
+function display4(){
+let a = document.getElementById("button1");
+let b = document.getElementById("button2");
+let c = document.getElementById("button3");
+let d = document.getElementById("button4");
+a.style.display ="none";
+b.style.display ="none";
+c.style.display ="none";
+d.style.display ="block";
+}
+
+function display5(){
+let e = document.getElementById("button1-1");
+let f = document.getElementById("button1-2");
+e.style.display ="block";
+f.style.display ="none";
+}
+
+function display6(){
+let e = document.getElementById("button1-1");
+let f = document.getElementById("button1-2");
+e.style.display ="none";
+f.style.display ="block";
+}
+
+function display7(){
+let g = document.getElementById("button2-1");
+let h = document.getElementById("button2-2");
+g.style.display ="block";
+h.style.display ="none";
+}
+
+function display8(){
+let g = document.getElementById("button2-1");
+let h = document.getElementById("button2-2");
+g.style.display ="none";
+h.style.display ="block";
+}
+
+function display9(){
+let i = document.getElementById("button3-1");
+let j = document.getElementById("button3-2");
+i.style.display ="block";
+j.style.display ="none";
+}
+
+function display10(){
+let i = document.getElementById("button3-1");
+let j = document.getElementById("button3-2");
+i.style.display ="none";
+j.style.display ="block";
+}
+
+function display11(){
+let k = document.getElementById("button4-1");
+let l = document.getElementById("button4-2");
+k.style.display ="block";
+l.style.display ="none";
+}
+
+function display12(){
+let k = document.getElementById("button4-1");
+let l = document.getElementById("button4-2");
+k.style.display ="none";
+l.style.display ="block";
+}
+
+function display13(){
+let m = document.getElementById("button1-1-1");
+let n = document.getElementById("button1-1-2");
+m.style.display ="block";
+n.style.display ="none";
+}
+
+function display14(){
+let m = document.getElementById("button1-1-1");
+let n = document.getElementById("button1-1-2");
+m.style.display ="none";
+n.style.display ="block";
+}
+
+function display15(){
+let o = document.getElementById("button1-2-1");
+let p = document.getElementById("button1-2-2");
+o.style.display ="block";
+p.style.display ="none";
+}
+
+function display16(){
+let o = document.getElementById("button1-2-1");
+let p = document.getElementById("button1-2-2");
+o.style.display ="none";
+p.style.display ="block";
+}
+
+function display17(){
+let q = document.getElementById("button2-1-1");
+let r = document.getElementById("button2-1-2");
+q.style.display ="block";
+r.style.display ="none";
+}
+
+function display18(){
+let q = document.getElementById("button2-1-1");
+let r = document.getElementById("button2-1-2");
+q.style.display ="none";
+r.style.display ="block";
+}
+
+function display19(){
+let s = document.getElementById("button2-2-1");
+let t = document.getElementById("button2-2-2");
+s.style.display ="block";
+t.style.display ="none";
+}
+
+function display20(){
+let s = document.getElementById("button2-2-1");
+let t = document.getElementById("button2-2-2");
+s.style.display ="none";
+t.style.display ="block";
+}
+
+function display21(){
+let u = document.getElementById("button3-1-1");
+let v = document.getElementById("button3-1-2");
+u.style.display ="block";
+v.style.display ="none";
+}
+
+function display22(){
+let u = document.getElementById("button3-1-1");
+let v = document.getElementById("button3-1-2");
+u.style.display ="none";
+v.style.display ="block";
+}
+
+function display23(){
+let w = document.getElementById("button3-2-1");
+let x = document.getElementById("button3-2-2");
+w.style.display ="block";
+x.style.display ="none";
+}
+
+function display24(){
+let w = document.getElementById("button3-2-1");
+let x = document.getElementById("button3-2-2");
+w.style.display ="none";
+x.style.display ="block";
+}
+
+function display25(){
+let y = document.getElementById("button4-1-1");
+let z = document.getElementById("button4-1-2");
+y.style.display ="block";
+z.style.display ="none";
+}
+
+function display26(){
+let y = document.getElementById("button4-1-1");
+let z = document.getElementById("button4-1-2");
+y.style.display ="none";
+z.style.display ="block";
+}
+
+function display27(){
+let aa = document.getElementById("button4-2-1");
+let bb = document.getElementById("button4-2-2");
+aa.style.display ="block";
+bb.style.display ="none";
+}
+
+function display28(){
+let aa = document.getElementById("button4-2-1");
+let bb = document.getElementById("button4-2-2");
+aa.style.display ="none";
+bb.style.display ="block";
+}
+</script>
+
+</body>
+</html>
